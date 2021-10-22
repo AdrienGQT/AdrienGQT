@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrien Gasquet | Photographie</title>
+    <link rel="icon" href="./images/ico/ico.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="homePage">
+        <div id="header">
+            <div id="logoContainer">
+
+            </div>
+            <a href="#galleryChooseTitle">
+                <div class="galleryButton">
+                    <h1>Galerie</h1>
+                </div>
+            </a>
+        </div>
+        <div id="topPage">
+            <div class="leftPart">
+
+            </div>
+            <div class="leftPartText">
+                <h1>Adrien <span class="bolder">Gasquet</span></h1>
+                <p>Photographe de <span class="bolder">rue</span> et de <span class="bolder">paysage</span>.</p>
+                <p>J’essaie de capturer la beauté que je croise au quotidien pour la
+                <span class="bolder">transmettre</span> et la <span class="bolder">partager</span>.</p>
+                <p >Explorer, Rencontrer, Créer.</p>
+            </div>
+            <div class="rightPart">
+                <div id="socialRedirect">
+                    <div id="socialLogoContainer">
+                        <div class="logo">
+                            <a href="https://www.instagram.com/adriengqt.photo/" target="_blank">
+                                <span id="instaLogo"></span>
+                            </a>
+                        </div>
+                        <div class="logo">
+                            <a href="https://twitter.com/AdrienGQT" target="_blank">
+                                <span id="twitterLogo"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomPart">
+
+            </div>
+        </div>
+        <div id="galleryChoose">
+            <div class="container">
+                <div id="galleryChooseTitle">
+                    <h1>Portfolio:</h1>
+                </div>
+                <div id="themeChoose">
+                    <div id="leftCol">
+
+                        <div id="theme1Box">
+                            <a href="#" class="themeBox" onclick="openUrbain(),openPortfolio()">
+                                <span class="themeImg">
+                                    <img src="./images/urbain/urbain_cover.jpg" alt="">
+                                </span>
+                                <p>URBAIN</p>
+                            </a>
+                        </div>
+
+                        <div id="theme3Box">
+                            <a href="#" class="themeBox" onclick="openPortfolio(),openChateaux()">
+                                <span class="themeImg">
+                                    <img src="./images/chateaux/chateaux_cover.jpg" alt="">
+                                </span>
+                                <p>CHATEAUX</p>
+                            </a>
+                        </div>
+
+                        <div id="theme5Box">
+                            <a href="#" class="themeBox" onclick="openPortfolio(),openNormandie()">
+                                <span class="themeImg">
+                                    <img src="./images/normandie/normandie_cover.jpg" alt="">
+                                </span>
+                                <p>NORMANDIE</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div id="rightCol">
+
+                        <div id="theme2Box">
+                            <a href="#" class="themeBox" onclick="openAstro(),openPortfolio()">
+                                <span class="themeImg">
+                                    <img src="./images/astrophoto/astrophoto_cover.jpg" alt="">
+                                </span>
+                                <p>ASTROPHOTOGRAPHIE</p>
+                            </a>
+                        </div>
+
+                        <div id="theme4Box">
+                            <a href="#" class="themeBox" onclick="openExplo(),openPortfolio()">
+                                <span class="themeImg">
+                                    <img src="./images/explo/explo_cover.jpg" alt="">
+                                </span>
+                                <p>EXPLORATION</p>
+                            </a>
+                        </div>
+
+                        <div id="theme6Box">
+                            <a href="#" class="themeBox" onclick="openNature(),openPortfolio()">
+                                <span class="themeImg">
+                                    <img src="./images/nature/nature_cover.jpg" alt="">
+                                </span>
+                                <p>NATURE</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolios">
+        <a href="#" class="close" onclick="closePortfolio()"></a>
+
+        <div id="urbainPart" class="Part">
+            <img src="./images/urbain/urbain1.jpg" alt="">
+            <img src="images/urbain/urbain2.jpg" alt="">
+            <img src="images/urbain/urbain3.jpg" alt="">
+            <img src="images/urbain/urbain4.jpg" alt="">
+            <img src="images/urbain/urbain5.jpg" alt="">
+            <img src="images/urbain/urbain6.jpg" alt="">
+            <img src="images/urbain/urbain7.jpg" alt="">
+            <img src="images/urbain/urbain8.jpg" alt="">
+            <img src="images/urbain/urbain9.jpg" alt="">
+            <img src="images/urbain/urbain10.jpg" alt="">
+            <img src="images/urbain/urbain11.jpg" alt="">
+            <img src="images/urbain/urbain12.jpg" alt="">
+            <img src="images/urbain/urbain13.jpg" alt="">
+            <img src="images/urbain/urbain14.jpg" alt="">
+            <img src="images/urbain/urbain15.jpg" alt="">
+            <img src="images/urbain/urbain16.jpg" alt="">
+            <img src="images/urbain/urbain17.jpg" alt="">
+            <img src="images/urbain/urbain18.jpg" alt="">
+            <img src="images/urbain/urbain19.jpg" alt="">
+            <img src="images/urbain/urbain20.jpg" alt="">
+            <img src="images/urbain/urbain21.jpg" alt="">
+        </div>
+
+        <div id="astroPart" class="Part">
+            <img src="./images/astrophoto/astro1.jpg" alt="">
+            <img src="./images/astrophoto/astro2.jpg" alt="">
+            <img src="./images/astrophoto/astro3.jpg" alt="">
+            <img src="./images/astrophoto/astro4.jpg" alt="">
+            <img src="./images/astrophoto/astro5.jpg" alt="">
+            <img src="./images/astrophoto/astro6.jpg" alt="">
+            <img src="./images/astrophoto/astro7.jpg" alt="">
+            <img src="./images/astrophoto/astro8.jpg" alt="">
+        </div>
+
+        <div id="chateauxPart" class="Part"> 
+            <img src="./images/chateaux/chateaux1.jpg" alt="">
+            <img src="./images/chateaux/chateaux2.jpg" alt="">
+            <img src="./images/chateaux/chateaux3.jpg" alt="">
+            <img src="./images/chateaux/chateaux4.jpg" alt="">
+        </div>
+
+        <div id="exploPart" class="Part">
+            <div class="imgContainer">
+                <p>Hello</p>
+                <img src="./images/explo/explo1.jpg" alt="">
+            </div>
+            <img src="./images/explo/explo1.jpg" alt="">
+            <img src="./images/explo/explo2.jpg" alt="">
+            <img src="./images/explo/explo3.jpg" alt="">
+            <img src="./images/explo/explo4.jpg" alt="">
+            <img src="./images/explo/explo5.jpg" alt="">
+            <img src="./images/explo/explo6.jpg" alt="">
+            <img src="./images/explo/explo7.jpg" alt="">
+            <img src="./images/explo/explo8.jpg" alt="">
+            <img src="./images/explo/explo9.jpg" alt="">
+        </div>
+
+        <div id="normandiePart" class="Part">
+            <img src="./images/normandie/normandie1.jpg" alt="">
+            <img src="./images/normandie/normandie2.jpg" alt="">
+            <img src="./images/normandie/normandie3.jpg" alt="">
+            <img src="./images/normandie/normandie4.jpg" alt="">
+            <img src="./images/normandie/normandie5.jpg" alt="">
+            <img src="./images/normandie/normandie6.jpg" alt="">
+            <img src="./images/normandie/normandie7.jpg" alt="">
+            <img src="./images/normandie/normandie8.jpg" alt="">
+            <img src="./images/normandie/normandie9.jpg" alt="">
+            <img src="./images/normandie/normandie10.jpg" alt="">
+            <img src="./images/normandie/normandie11.jpg" alt="">
+            <img src="./images/normandie/normandie12.jpg" alt="">
+            <img src="./images/normandie/normandie13.jpg" alt="">
+            <img src="./images/normandie/normandie14.jpg" alt="">
+            <img src="./images/normandie/normandie15.jpg" alt="">
+            <img src="./images/normandie/normandie16.jpg" alt="">
+        </div>
+
+        <div id="naturePart" class="Part">
+            <img src="./images/nature/nature1.jpg" alt="">
+            <img src="./images/nature/nature13.jpg" alt="">
+            <img src="./images/nature/nature2.jpg" alt="">
+            <img src="./images/nature/nature3.jpg" alt="">
+            <img src="./images/nature/nature4.jpg" alt="">
+            <img src="./images/nature/nature12.jpg" alt="">
+            <img src="./images/nature/nature5.jpg" alt="">
+            <img src="./images/nature/nature6.jpg" alt="">
+            <img src="./images/nature/nature7.jpg" alt="">
+            <img src="./images/nature/nature8.jpg" alt="">
+            <img src="./images/nature/nature9.jpg" alt="">
+            <img src="./images/nature/nature10.jpg" alt="">
+            <img src="./images/nature/nature11.jpg" alt="">
+            <img src="./images/nature/nature14.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

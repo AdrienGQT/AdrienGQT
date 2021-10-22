@@ -1,0 +1,493 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  --main-background-color: #282828;
+  --main-background-color2: #1b1b1b;
+  --pale-blue: #728281;
+  --pale-blue2: #9dc2bf;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* transition: scroll.9s; */
+}
+
+
+#homePage {
+  height: 100vh;
+  width: 100vw;
+}
+
+#homePage #portfolios {
+  position: absolute;
+}
+
+#header {
+  z-index: 30;
+  visibility: visible;
+  background-color: var(--main-background-color);
+  height: 100px;
+  filter: drop-shadow(0 10px 20px rgb(24, 24, 24));
+  position: relative;
+}
+
+#logoContainer {
+  /* background-color: yellowgreen; */
+  background-image: url(./images/logo.png);
+  background-size: 160%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  height: 50px;
+  width: 100px;
+}
+
+.galleryButton {
+  background-color: var(--pale-blue);
+  position: absolute;
+  color: white;
+  top: 35px;
+  right: 40px;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: transform.2s, filter.2s, background-color.2s;
+}
+.galleryButton:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7));
+  background-color: var(--pale-blue2);
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.07rem;
+}
+
+#topPage {
+  height: calc(100vh - 100px);
+  visibility: visible;
+  width: 100vw;
+  position: relative;
+  background-color: var(--main-background-color);
+}
+
+.leftPart {
+  z-index: 20;
+  position: absolute;
+  width: 35vw;
+  border-top: calc(100vh - 100px) solid rgb(40, 40, 40);
+  border-right: 100px solid transparent;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.leftPartText {
+  position: absolute;
+  z-index: 50;
+  /* border: red solid; */
+  top: 15vh;
+  margin-left: 40px;
+  width: 500px;
+  color: white;
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.leftPartText h1 {
+  font-size: 3.3rem;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.leftPartText p {
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.leftPartText p .bolder {
+  font-weight: 350;
+}
+
+.leftPartText .bolder {
+  font-weight: 400;
+}
+
+.rightPart {
+  z-index: 10;
+  /* border: turquoise solid; */
+  background-image: url(./images/A7R03168.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 100px);
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 80vw;
+  mix-blend-mode: lighten;
+}
+
+#socialRedirect{
+  /* background-color: blue; */
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  height: calc(100vh - 100px);
+  width: 70px;
+}
+
+#socialLogoContainer{
+  position: absolute;
+  /* background-color: chartreuse; */
+  top: calc(50% - 110px);
+  left: 0;
+  height: auto;
+}
+
+.logo{
+  position: relative;
+  margin-top: 15px;
+  /* background-color: brown; */
+  height: 40px;
+  width: 40px;
+}
+
+.logo span{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
+  opacity: 0.5;
+  transition: opacity.2s, tranform.2s;
+}
+
+.logo span:hover{
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+#instaLogo{
+  background-image: url(./images/ico/instagram.png);
+  filter: invert(1);
+  background-size: 30px;
+}
+
+#twitterLogo{
+  background-image: url(./images/ico/twitter.png);
+  filter: brightness(0) invert(1);
+}
+
+
+.bottomPart {
+  /* background-color: var(--main-background-color2); */
+  z-index: 50;
+  position: absolute;
+  height: 150px;
+  width: 100vw;
+  bottom: 0;
+  right: 0;
+  /* background: linear-gradient(180deg, rgba(40,40,40,1) 0%, rgba(27,27,27,1) 100%); */
+}
+
+/* PORTFOLIO */
+
+#galleryChoose {
+  background-color: var(--main-background-color);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#galleryChoose .container {
+  /* background-color: cornsilk; */
+  position: absolute;
+  top: 20px;
+  height: calc(100vh - 50px);
+  width: 80vw;
+}
+
+#galleryChooseTitle {
+  /* background-color: darkblue; */
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#galleryChooseTitle h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+#themeChoose {
+  /* background-color: crimson; */
+  height: calc(100% - 80px);
+  position: relative;
+}
+
+#leftCol {
+  /* background-color: chartreuse; */
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#leftCol div {
+  /* background-color: darkcyan; */
+  height: calc(100% / 3);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightCol {
+  /* background-color: rgb(224, 255, 193); */
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+#rightCol div {
+  /* background-color: rgb(10, 82, 82); */
+  height: calc(100% / 3);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.themeBox {
+  /* background-color: rgb(104, 255, 255); */
+  position: relative;
+  height: 80%;
+  width: 80%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  text-decoration: none;
+  transition: color.2s, transform.3s, filter 3s;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.4));
+}
+
+.themeBox p {
+  z-index: 1;
+}
+
+.themeImg {
+  z-index: 0;
+  /* background-color: yellow; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.9;
+  /* mix-blend-mode: lighten; */
+  /* position: absolute; */
+}
+
+.themeImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity.2s;
+}
+
+.themeBox:hover {
+  color: white;
+  transform: scale(1.01);
+  filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.6));
+}
+
+.themeBox:hover .themeImg img {
+  opacity: 0.8;
+  filter: blur(1px);
+}
+
+
+
+
+
+
+
+
+/* PORTFOLIO SCREEN ADAPTATION */
+
+@media screen and (min-width: 1090px) {
+  #galleryChoose {
+    height: 170vh;
+  }
+
+  #galleryChoose .container {
+    /* background-color: rgb(155, 145, 106); */
+    height: 1200px;
+    width: 90vw;
+  }
+
+  .themeBox {
+    height: 85%;
+    width: 90%;
+    max-width: 1500px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .leftPartText{
+    top: 20px;
+    width: 300px;
+  }
+
+  #socialRedirect{
+    visibility: hidden;
+  }
+
+  .themeBox{
+    color: white;
+  }
+
+  .themeBox p{
+    font-size: 11px;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* PORTOFOLIO PAGES */
+
+/* URBAIN PART */
+
+#portfolios {
+  background-color: var(--main-background-color);
+  background: linear-gradient(
+    180deg,
+    rgba(40, 40, 40, 1) 0%,
+    rgb(27, 27, 27) 47%,
+    rgba(40, 40, 40, 1) 100%
+  );
+  z-index: 100;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  display: none;
+}
+
+#portfolios .Part {
+  /* background-color: lawngreen; */
+  margin: 40px;
+  margin-right: -40px;
+  padding: 40px;
+  text-align: center;
+  /* padding: 25px; */
+}
+
+#portfolios .Part img {
+  /* background-color: yellowgreen; */
+  margin-right: 150px;
+  margin-bottom: 100px;
+  max-height: 450px;
+  max-width: 1800px;
+  display: inline-block;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.4));
+  transition: transform.4s, border-color.8s, filter.4s;
+}
+
+#portfolios img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 18px rgba(0, 0, 0, 0.5));
+}
+
+.imgContainer{
+  background-color: aquamarine;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  max-height: 450px;
+  max-width: 1800px;
+}
+
+/* PART BY PART */
+
+#urbainPart {
+  display: none;
+}
+
+#astroPart {
+  display: none;
+}
+
+#exploPart {
+  display: none;
+}
+
+#chateauxPart {
+  display: none;
+}
+
+#naturePart {
+  display: none;
+}
+
+#normandiePart {
+  display: none;
+}
+
+
+.close {
+  position: fixed;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  transition: transform.4s, opacity.4s;
+}
+.close:hover {
+  opacity: 1;
+  transform: scale(1.10);
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 3px;
+  border-radius: 15px;
+  background-color: rgb(230, 230, 230);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 600px){
+  #portfolios .Part{
+    width: 95vw;
+  }
+}
