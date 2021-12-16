@@ -17,7 +17,8 @@ function closePortfolio() {
     document.getElementById("normandiePart").style.display = "none";
     document.getElementById("naturePart").style.display = "none";
     document.getElementById("exploPart").style.display = "none";
-    document.getElementById("chateauxPart").style.display = "none";
+    document.getElementById("autoPart").style.display = "none";
+    document.getElementById("testPart").style.display = "none";
 }
 
 
@@ -41,6 +42,10 @@ function openExplo() {
     document.getElementById("exploPart").style.display = "block";
 }
 
-function openChateaux() {
-    document.getElementById("chateauxPart").style.display = "block";
+function openAuto() {
+    document.getElementById("autoPart").style.display = "block";
+}
+
+function openTest() {
+    document.getElementById("testPart").style.display = "block";
 }

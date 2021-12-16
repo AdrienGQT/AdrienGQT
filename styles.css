@@ -11,7 +11,6 @@
   /* transition: scroll.9s; */
 }
 
-
 #homePage {
   height: 100vh;
   width: 100vw;
@@ -135,7 +134,7 @@ h1 {
   mix-blend-mode: lighten;
 }
 
-#socialRedirect{
+#socialRedirect {
   /* background-color: blue; */
   z-index: 100;
   position: absolute;
@@ -144,7 +143,7 @@ h1 {
   width: 70px;
 }
 
-#socialLogoContainer{
+#socialLogoContainer {
   position: absolute;
   /* background-color: chartreuse; */
   top: calc(50% - 110px);
@@ -152,7 +151,7 @@ h1 {
   height: auto;
 }
 
-.logo{
+.logo {
   position: relative;
   margin-top: 15px;
   /* background-color: brown; */
@@ -160,7 +159,7 @@ h1 {
   width: 40px;
 }
 
-.logo span{
+.logo span {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -172,32 +171,20 @@ h1 {
   transition: opacity.2s, tranform.2s;
 }
 
-.logo span:hover{
+.logo span:hover {
   opacity: 1;
   transform: scale(1.02);
 }
 
-#instaLogo{
+#instaLogo {
   background-image: url(./images/ico/instagram.png);
   filter: invert(1);
   background-size: 30px;
 }
 
-#twitterLogo{
+#twitterLogo {
   background-image: url(./images/ico/twitter.png);
   filter: brightness(0) invert(1);
-}
-
-
-.bottomPart {
-  /* background-color: var(--main-background-color2); */
-  z-index: 50;
-  position: absolute;
-  height: 150px;
-  width: 100vw;
-  bottom: 0;
-  right: 0;
-  /* background: linear-gradient(180deg, rgba(40,40,40,1) 0%, rgba(27,27,27,1) 100%); */
 }
 
 /* PORTFOLIO */
@@ -320,13 +307,6 @@ h1 {
   filter: blur(1px);
 }
 
-
-
-
-
-
-
-
 /* PORTFOLIO SCREEN ADAPTATION */
 
 @media screen and (min-width: 1090px) {
@@ -349,37 +329,26 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .leftPartText{
+  .leftPartText {
     top: 20px;
     width: 300px;
   }
 
-  #socialRedirect{
+  #socialRedirect {
     visibility: hidden;
   }
 
-  .themeBox{
+  .themeBox {
     color: white;
   }
 
-  .themeBox p{
+  .themeBox p {
     font-size: 11px;
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* PORTOFOLIO PAGES */
-
-/* URBAIN PART */
 
 #portfolios {
   background-color: var(--main-background-color);
@@ -401,6 +370,7 @@ h1 {
   margin: 40px;
   margin-right: -40px;
   padding: 40px;
+  padding-bottom: 0;
   text-align: center;
   /* padding: 25px; */
 }
@@ -435,7 +405,7 @@ h1 {
   display: none;
 }
 
-#chateauxPart {
+#autoPart {
   display: none;
 }
 
@@ -446,7 +416,6 @@ h1 {
 #normandiePart {
   display: none;
 }
-
 
 .close {
   position: fixed;
@@ -460,12 +429,13 @@ h1 {
 }
 .close:hover {
   opacity: 1;
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
-.close:before, .close:after {
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 33px;
   width: 3px;
   border-radius: 15px;
@@ -478,20 +448,57 @@ h1 {
   transform: rotate(-45deg);
 }
 
-
-@media screen and (max-width: 600px){
-  #portfolios .Part {
-  /* background-color: lawngreen; */
-  margin: 15px;
-  padding: 0px;
-  padding-top: 75px;
+#bpText {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  height: 40px;
+  width: 260px;
+  overflow: hidden;
 }
 
-#portfolios .Part img {
+#bpRedirect {
+  /* background-color: violet; */
+  position: absolute;
+  margin-top: 50px;
+  height: 50px;
+  width: 200px;
+  overflow: hidden;
+}
+
+#portfolios .logo {
   /* background-color: yellowgreen; */
-  margin-right: 0px;
-  margin-bottom: 100px;
-  max-width: 100%;
+  margin-top: 0;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin-left: 30px;
 }
 
+#portfolios span {
+  transition: opacity.2s, tranform.2s;
+  background-position: center;
+  /* background-color: rgb(255, 0, 0); */
+}
+
+#portfolios span:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 600px) {
+  #portfolios .Part {
+    /* background-color: lawngreen; */
+    margin: 15px;
+    padding: 0px;
+    padding-top: 75px;
+  }
+
+  #portfolios .Part img {
+    /* background-color: yellowgreen; */
+    margin-right: 0px;
+    margin-bottom: 100px;
+    max-width: 100%;
+  }
 }
